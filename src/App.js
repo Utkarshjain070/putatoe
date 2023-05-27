@@ -3,7 +3,7 @@ import {Routes, Route, BrowserRouter as Router} from 'react-router-dom'
 
 function App() {
   return (
-   <Router>
+   <Router basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route exact path="/" element={<Home/>} />
     </Routes>
